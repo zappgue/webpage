@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <style>
+      html {
+        font-size: 62.5%;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center; /* Center the card div along the x-axis */
+        margin: 1rem;
+        background: #fff8a7;
+        font-family: Arial, sans-serif;
+        font-size: 2rem;
+      }
+      h2 {
+        margin: 1rem;
+      }
+      .card {
+        background: #fff;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+        display: flex; /* Add display flex to center the content within the card */
+        flex-direction: column; /* Change to column to stack image above text */
+        align-items: center; /* Horizontally center the card content */
+        border-radius: 0.4rem;
+      }
+      .card .image {
+        /* Remove max-width for the image container */
+        height: auto;
+        margin: 2rem 0 0 0;
+        justify-content: center;
+        width: 100%;
+        display: flex;
+      }
+      .card .image img {
+        width: 50%; /* Set the image width to 100% of its container to fit within the viewport */
+        height: auto; /* Allow the image to scale proportionally */
+        border-radius: 50%;
+      }
+      .card .text {
+        max-width: 55rem;
+        padding: 15px;
+        line-height: 1.5;
+        word-wrap: break-word;
+      }
+      .card .text img {
+        max-width: 200px; /* Set the max-width for the "swc" image */
+        height: auto; /* Allow images to scale proportionally */
+      }
+      .sr-logo {
+        max-width: 4rem !important;
+        height: auto;
+        margin: 0 auto 1rem auto;
+      }
+      .sr {
+        display: flex;
+        justify-content: center;
+      }
+      /* Adjust font size for mobile devices */
+      @media screen and (max-width: 768px) {
+        html {
+          font-size: 50%;
+        }
+        .card .text {
+          max-width: 80vw;
+        }
+        h2 {
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="image">
+        <img src="assets/download.jpeg" />
+      </div>
+      <div class="text">
+        <h2>Junyi Qian - A reliable PA you can trust</h2>
+        <h3>Contact:</h3>
+        <ul>
+          <li>Mobile: 07926 267 888</li>
+          <li>Telephone: 01424 253 213</li>
+          <li>Email: qianjunyi33@gmail.com</li>
+        </ul>
+        <h3>List of services</h3>
+        <ul>
+          <li>
+            Personal care: support wide range of personal
+            care including full bath, bed bath, shower,
+            teeth brush, dressing, washing and other
+            additional routines.
+          </li>
+          <li>Medication support.</li>
+          <li>
+            Meal preparation: cooking and baking (as a
+            part-time chef, Junyi is excellent at cooking
+            Chinese cuisine).
+          </li>
+          <li>
+            Domestic duties: cleaning, hoovering, tidying,
+            bed changing and washing.
+          </li>
+          <li>
+            Administration support: filling out forms,
+            organising paperwork, arranging meetings,
+            banking and pension collection.
+          </li>
+          <li>
+            Gardening: mowing, cutting, watering, feeding
+            and pest control.
+          </li>
+          <li>
+            My vehicle has been insured for business use, so
+            I can support to access the community: shopping,
+            accompanying to appointments, trips out and
+            other social engagements.
+          </li>
+          <li>
+            Pet care: pet walking, feeding, vet
+            appointments.
+          </li>
+          <li>Emergency call available.</li>
+        </ul>
+        <h3>Coverage</h3>
+        <p>
+          Bexhill, Pevensey, Eastbourne, Hastings, Battle
+          and all surrounding areas.
+        </p>
+        <h3>Availability</h3>
+        <p>
+          Limited availability. Please call, text, or email
+          to discuss.
+        </p>
+        <h3>Charging and related information</h3>
+        <ul>
+          <li>Local area (Bexhill) - &#163;18 per hour</li>
+          <li>
+            Hastings, Eastbourne plus others (under 15
+            miles) - &#163;20 per hour
+          </li>
+          <li>Weekends - &#163;22 per hour</li>
+        </ul>
+        <p>All rates can be agreed at initial meeting.</p>
+        <hr />
+        <img src="assets/swc.jpeg" />
+        <p>
+          A member of the Support With Confidence
+          accreditation scheme. Providers in this scheme
+          have been vetted and approved by East Sussex
+          County Council.
+        </p>
+        <p>
+          For more information, please visit my listing on
+          the support with confidence website:<br /><a
+            href="https://apps.eastsussex.gov.uk/socialcare/athome/approvedproviders/detail.aspx?&ref=202204825"
+            >https://apps.eastsussex.gov.uk/socialcare/athome/approvedproviders/detail.aspx?&ref=202204825</a
+          >
+        </p>
+        <div class="sr">
+          <a href="https://www.softrhino.com">
+            <img class="sr-logo" src="assets/logo.png"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
